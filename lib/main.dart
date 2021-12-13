@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter_catalog/home_page.dart';
+import 'package:flutter_catalog/pages/home_page.dart';
 import 'package:flutter_catalog/pages/login_page.dart';
 
 
@@ -24,6 +25,7 @@ class NeelamApp extends StatelessWidget {
       fontFamily: GoogleFonts.lato().fontFamily,
       // primaryTextTheme: GoogleFonts.latoTextTheme(),
       ),
+      debugShowCheckedModeBanner: false,
       
       darkTheme: ThemeData(
         brightness: Brightness.dark,
@@ -32,9 +34,9 @@ class NeelamApp extends StatelessWidget {
       routes: {
 
      
-      "/":(context)=>LoginPage(),
-      "/home":(context)=>HomePage(),
-      "/Login":(context)=>LoginPage()
+      "/":(context) => LoginPage(),
+      MyRoutes.homeRoutes:(context)=>HomePage(),
+      MyRoutes.loginRoutes:(context)=>LoginPage()
       
        },
 
