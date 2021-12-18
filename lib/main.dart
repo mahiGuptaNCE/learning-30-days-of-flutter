@@ -31,6 +31,7 @@ class NeelamApp extends StatelessWidget {
         brightness: Brightness.dark,
 
       ),
+      initialRoute: MyRoutes.homeRoutes,
       routes: {
 
      
